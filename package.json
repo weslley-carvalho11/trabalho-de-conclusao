@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/weslley-carvalho11/trabalho-de-conclusao#readme",
   "dependencies": {
-    "mocha": "^11.7.5"
+    "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4"
   }
 }
