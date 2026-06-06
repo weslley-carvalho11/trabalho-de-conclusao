@@ -24,3 +24,6 @@ jobs:
 
       - name: Instalando o Mocha
         run: npm i mocha
+
+      - name: Rodar os testes
+        run: npx mocha
