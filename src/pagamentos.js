@@ -18,7 +18,7 @@ export default class Pagamentos {
             } else {
                 this.#pagamentos[i].categoria = 'padrão';
             }
-        }
+        };
     }
 
     consultarUltimoPagamento() {

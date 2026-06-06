@@ -1,0 +1,26 @@
+name: 'Trabalho de conclusão - Integração Continua'
+
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  schedule:
+  - cron: '10 * * * *'
+
+jobs:
+  teste-unitario:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v4
+
+       uses: actions/setup-node@v4
+        with: 
+          node-version: 24.x
+
+      - name: Instalando Dependências
+        run: npm install -g
+
+      - name: Instalando o Mocha
+        run: npm i mocha
+
